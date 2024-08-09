@@ -1,0 +1,59 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Notification Mail!</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <!-- use the font -->
+    <style>
+        body {
+            font-family: system-ui;
+            font-weight: normal;
+        }
+
+        #abc {
+            color: wheat;
+            background: #4e54c8;
+            background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
+            background: linear-gradient(to right, #8f94fb, #4e54c8);
+        }
+
+        @media screen and (min-width: 800px) {
+            #passtd {
+              padding: 40px 20px
+            }
+          }
+    </style>
+</head>
+
+<body style="margin: 0 auto; padding: 0;">
+
+    <table cellpadding="0" cellspacing="0" width="600"
+        style="border-collapse: collapse;text-align: center; border: none;margin: 0 auto;">
+        <tr>
+            <td style="text-align: center;" id="abc">
+                <h1 style="font-weight: bold;font-size: 24px;  padding: 20px 0;">
+                    Reset your Managerial Games Password</h1>
+            </td>
+        </tr>
+        <tr>
+            <td id = "passtd" style="padding:40px 80px; background-color:white;">
+                <p th:text="${''}" style="font-size: 18px;">Hi,</p>
+                <p style="font-size: 20px;">[[templatebody]]</p>
+                
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 20px 0;" id="abc">
+                   </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
